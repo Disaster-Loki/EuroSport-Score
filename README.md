@@ -16,7 +16,7 @@ EuroSport Score is a web application built using the Laravel framework. It provi
 
 ## Getting Started
 
-To get started with EuroSport Score, follow these steps:
+To get started with EuroSport Score, follow these steps
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies by running `composer install`.
