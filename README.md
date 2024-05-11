@@ -2,7 +2,7 @@
 
 Welcome to EuroSport Score, your go-to platform for all things related to European football championships!
 
-## About EuroSport Score
+## About EuroSport Scor
 
 EuroSport Score is a web application built using the Laravel framework. It provides comprehensive information about the European football championships, including details about the host countries, stadiums, cities, teams, players, match schedules, results, and much more.
 
