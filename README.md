@@ -1,4 +1,4 @@
-# EuroSport Score
+# EuroSport Scor
 
 Welcome to EuroSport Score, your go-to platform for all things related to European football championships!
 
