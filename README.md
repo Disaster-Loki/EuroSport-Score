@@ -14,7 +14,7 @@ EuroSport Score is a web application built using the Laravel framework. It provi
 - Player statistics tracking, such as passes, shots, goals, and assists.
 - Leaderboards for top scorers, best goalkeepers, and most valuable players.
 
-## Getting Starte
+## Getting Started
 
 To get started with EuroSport Score, follow these steps:
 
