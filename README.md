@@ -24,6 +24,6 @@ To get started with EuroSport Score, follow these steps:
 4. Run the database migrations and seeders to populate the database with initial data: `php artisan migrate --seed`.
 5. Serve the application using `php artisan serve` and visit `http://localhost:8000` in your browser.
 
-## Contributin
+## Contributing
 
 We welcome contributions from the community to enhance EuroSport Score further. If you have any suggestions, bug reports, or feature requests, please feel free to open an issue or submit a pull request.
