@@ -50,7 +50,7 @@
                                         </a>
                                     @endif
                                 @endauth
-                            </nav>
+                            </nav
                         @endif
                     </header>
 
