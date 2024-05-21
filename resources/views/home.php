@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/home.css">
     <style>
-        *{
+        * {
     margin: 0;
     padding: 0;
 }
-
 .button {
     position: absolute;
     top: 50px; 
