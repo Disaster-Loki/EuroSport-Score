@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-bg: #010035;
+    --blue-t: #0017c6;
+    --blue-v: #2501FF;
+    --black-translucent: rgba(0, 0, 0, 0.7);
+    --white: #FFFFFF;
+    --whitesmoke: #f3f3f3;
+}
+
+body {
+    background-color: var(--blue-bg);
+    font-family: "Roboto Serif", serif;
+}
+
+.profile {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    color: var(--white);
+}
+
+.player-info {
+    text-align: center;
+}
+
+.player-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.blue-line {
+    border: 4px solid var(--blue-v);
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.player-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.player-image {
+    flex: 1;
+}
+
+.player-image i {
+    font-size: 100px;
+    color: var(--white);
+}
+
+.player-details {
+    flex: 1;
+    text-align: left;
+}
+
+.player-details p {
+    margin-bottom: 10px;
+}
+
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.player-table caption {
+    background-color: var(--blue-t);
+    color: var(--whitesmoke);
+    padding: 10px;
+    font-size: 18px;
+}
+
+.player-table th, .player-table td {
+    border: 1px solid var(--blue-v);
+    padding: 10px;
+    text-align: center;
+}
+
+.player-table th {
+    background-color: var(--black-translucent);
+}
+
+.player-table td {
+    background-color: var(--black-translucent);
+    color: var(--whitesmoke);
+}

@@ -37,7 +37,7 @@ body {
     background: var(--blue_f);
 }
 
-.form-login {
+.form-signup {
     background: rgba(0, 0, 0, 0.65);
     position: absolute;
     padding: 20px;
@@ -46,23 +46,23 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.form-login .sign {
+.form-signup .sign {
     text-align: center;
-    margin: 20px 20px 40px 20px;
+    margin-bottom: 40px;
 }
 
-.form-login .sign h3 {
+.form-signup .sign h3 {
     font-weight: 500;
     font-size: 24px;
     color: var(--cinza_t);
 }
 
-.form-login .input {
+.form-signup .input {
     position: relative;
-    margin: 20px 0px 30px 0px;
+    margin-bottom: 30px;
 }
 
-.form-login .input i {
+.form-signup .input i {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -71,8 +71,9 @@ body {
     font-size: 18px;
 }
 
-.form-login .input input[type="email"],
-.form-login .input input[type="password"] {
+.form-signup .input input[type="text"],
+.form-signup .input input[type="email"],
+.form-signup .input input[type="password"] {
     width: 100%;
     padding: 10px 10px 10px 40px;
     border: none;
@@ -82,41 +83,28 @@ body {
     font-size: 16px;
 }
 
-.options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
+.form-signup .agree-terms {
+    margin-bottom: 20px;
 }
 
-.options .remember-me {
-    display: flex;
-    align-items: center;
+.form-signup .agree-terms label {
     color: var(--whitesmoke);
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.options .remember-me input {
+.form-signup .agree-terms input {
     margin-right: 5px;
 }
 
-.options .sign-up {
-    color: var(--blue_t);
-    font-size: 14px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.options .sign-up:hover {
-    color: var(--blue_v);
-}
-
-.form-login .input input[type="submit"] {
+.form-signup input[type="submit"] {
     width: 100%;
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background: var(--blue_v);
+    background: var(--blue_t);
     color: var(--white);
     font-size: 18px;
     font-weight: bold;
@@ -124,7 +112,6 @@ body {
     transition: background 0.3s;
 }
 
-.form-login .input input[type="submit"]:hover {
-    background: var(--whitesmoke);
-    color: var(--blue_v);
+.form-signup input[type="submit"]:hover {
+    background: var(--blue_v);
 }
