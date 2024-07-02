@@ -2,10 +2,7 @@
 require_once '../config/connection.php';
 require_once '../model/City.php';
 
-$database = new Connection();
-$db = $database->getConnection();
-$city = new City($db);
-
+$city = new City($conn);
 header('Content-Type: application/json');
 $endpoint = $_SERVER['REQUEST_URI'];
 $method = $_SERVER['REQUEST_METHOD'];
