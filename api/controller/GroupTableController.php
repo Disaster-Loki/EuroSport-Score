@@ -10,25 +10,25 @@ $method = $_SERVER['REQUEST_METHOD'];
 switch ($method) {
     case 'GET':
         if ($endpoint === '/EuroSport-Score/group-table') {
-            $response = $table->getGroupTables();
+            $response = $table->getGroups();
             echo json_encode($response);
         } else if (preg_match('/\/EuroSport-Score\/group-table\/(\d+)/', $endpoint, $matches)) {
             $id = $matches[1];
-            $response = $table->getGroupTableById($id);
+            $response = $table->getGroupById($id);
             echo json_encode($response);
         }
         break;
     case 'POST':
         if ($endpoint === '/EuroSport-Score/group-table') {
             $data = json_decode(file_get_contents('php://input'), true);
-            $response = $table->addGroupTable($data);
+            $response = $table->addGroup($data);
             echo json_encode($response);
         }
         break;
     case 'DELETE':
         if (preg_match('/\/EuroSport-Score\/group-table\/(\d+)/', $endpoint, $matches)) {
             $id = $matches[1];
-            $response = $table->deleteGroupTable($id);
+            $response = $table->deleteGroup($id);
             echo json_encode($response);
         }
         break;
@@ -36,7 +36,7 @@ switch ($method) {
         if (preg_match('/\/EuroSport-Score\/group-table\/(\d+)/', $endpoint, $matches)) {
             $id = $matches[1];
             $data = json_decode(file_get_contents('php://input'), true);
-            $response = $table->updateGroupTable($id, $data);
+            $response = $table->updateGroup($id, $data);
             echo json_encode($response);
         }
         break;
