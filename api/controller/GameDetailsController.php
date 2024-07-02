@@ -1,6 +1,6 @@
 <?php
-require_once '../config/connection.php';
-require_once '../model/GameDetails.php';
+require_once './api/config/connection.php';
+require_once './api/model/GameDetails.php';
 
 $details = new GameDetails($conn);
 header('Content-Type: application/json');

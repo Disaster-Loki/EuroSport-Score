@@ -1,6 +1,6 @@
 <?php
-require_once '../config/connection.php';
-require_once '../model/Calendar.php';
+require_once './api/config/connection.php';
+require_once './api/model/Calendar.php';
 
 $calendar = new Calendar($conn);
 header('Content-Type: application/json');

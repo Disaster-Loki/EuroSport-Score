@@ -1,6 +1,6 @@
 <?php
-require_once '../config/connection.php';
-require_once '../model/Stadium.php';
+require_once './api/config/connection.php';
+require_once './api/model/Stadium.php';
 
 $stadium = new Stadium($conn);
 

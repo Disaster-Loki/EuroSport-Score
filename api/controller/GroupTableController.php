@@ -1,6 +1,6 @@
 <?php
-require_once '../config/connection.php';
-require_once '../model/GroupTable.php';
+require_once './api/config/connection.php';
+require_once './api/model/GroupTable.php';
 
 $table = new GroupTable($conn);
 header('Content-Type: application/json');

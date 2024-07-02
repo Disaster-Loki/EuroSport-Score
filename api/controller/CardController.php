@@ -1,6 +1,6 @@
 <?php
-require_once '../config/connection.php';
-require_once '../model/Card.php';
+require_once './api/config/connection.php';
+require_once './api/model/Card.php';
 
 $card = new Card($conn);
 

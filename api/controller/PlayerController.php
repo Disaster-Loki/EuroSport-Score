@@ -1,6 +1,6 @@
 <?php
-require_once '../config/connection.php';
-require_once '../model/Player.php';
+require_once './api/config/connection.php';
+require_once './api/model/Player.php';
 
 $player = new Player($conn);
 header('Content-Type: application/json');

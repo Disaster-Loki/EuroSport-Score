@@ -1,6 +1,6 @@
 <?php
-require_once '../config/connection.php';
-require_once '../model/City.php';
+require_once './api/config/connection.php';
+require_once './api/model/City.php';
 
 $city = new City($conn);
 header('Content-Type: application/json');

@@ -1,6 +1,6 @@
 <?php
-require_once '../config/connection.php';
-require_once '../model/NationalTeam.php';
+require_once './api/config/connection.php';
+require_once './api/model/NationalTeam.php';
 
 $team = new NationalTeam($conn);
 header('Content-Type: application/json');
@@ -10,25 +10,25 @@ $method = $_SERVER['REQUEST_METHOD'];
 switch ($method) {
     case 'GET':
         if ($endpoint === '/EuroSport-Score/national-team') {
-            $response = $team->getNationalTeams();
+            $response = $team->getTeams();
             echo json_encode($response);
         } else if (preg_match('/\/EuroSport-Score\/national-team\/(\d+)/', $endpoint, $matches)) {
             $id = $matches[1];
-            $response = $team->getNationalTeamById($id);
+            $response = $team->getTeamById($id);
             echo json_encode($response);
         }
         break;
     case 'POST':
         if ($endpoint === '/EuroSport-Score/national-team') {
             $data = json_decode(file_get_contents('php://input'), true);
-            $response = $team->addNationalTeam($data);
+            $response = $team->addTeam($data);
             echo json_encode($response);
         }
         break;
     case 'DELETE':
         if (preg_match('/\/EuroSport-Score\/national-team\/(\d+)/', $endpoint, $matches)) {
             $id = $matches[1];
-            $response = $team->deleteNationalTeam($id);
+            $response = $team->deleteTeam($id);
             echo json_encode($response);
         }
         break;
@@ -36,7 +36,7 @@ switch ($method) {
         if (preg_match('/\/EuroSport-Score\/national-team\/(\d+)/', $endpoint, $matches)) {
             $id = $matches[1];
             $data = json_decode(file_get_contents('php://input'), true);
-            $response = $team->updateNationalTeam($id, $data);
+            $response = $team->updateTeam($id, $data);
             echo json_encode($response);
         }
         break;
